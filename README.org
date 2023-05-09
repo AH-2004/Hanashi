@@ -2,7 +2,4 @@
 #+AUTHOR: AH
 #+DESCRIPTION: Lightweight web based communication platform.
 
-
-* Hanashi
-
 ** Hanashi is a lightweight web based communication platform.
