@@ -1,5 +1,5 @@
-TITLE: Hanashi
-AUTHOR: AH
+#+TITLE: Hanashi
+#+AUTHOR: AH
 #+DESCRIPTION: Lightweight web based communication platform.
 
 
