@@ -7,7 +7,7 @@
 	--purple_4: #494458;
 }
 
-html, body { height: 100%; margin: 0px; overflow-x: auto; overflow-y: auto; background-color: var(--purple_0); }
+html, body { height: 100%; margin: 0px; overflow-x: hidden; overflow-y: hidden; background-color: var(--purple_0); }
 
 .center { display: flex; justify-content: center; align-items: center; }
 .between { display: flex; justify-content: space-between; align-items: center; }
@@ -38,7 +38,7 @@ header button {
 	float: right;
 }
 
-header button img { width: 30px; }
+header button img { width: 80%; }
 
 header button:hover { background-color: var(--purple_3); }
 
@@ -57,7 +57,7 @@ main div { margin: 0.5%; }
 #video_in_div {
 	background-color: var(--purple_2);
 	width: 100%;
-/*	height: 100%;*/
+	height: 100%;
 	border-radius: 25px;
 }
 
