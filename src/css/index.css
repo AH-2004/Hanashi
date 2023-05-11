@@ -54,14 +54,14 @@ main div { margin: 0.5%; }
 	width: 100%;
 }
 
-#video_in {
+#video_in_div {
 	background-color: var(--purple_2);
 	width: 100%;
 /*	height: 100%;*/
 	border-radius: 25px;
 }
 
-#video_in video {
+#video_in_div video {
 	width: 100%;
 	height: auto;
 	border-radius: 25px;
@@ -81,9 +81,9 @@ main div { margin: 0.5%; }
 
 #sidebar { height: 73%; }
 
-#video_out { height: 25% };
+#video_out_div { height: 25% };
 
-#video_out video {
+#video_out_div video {
 	width: 100%;
 	height: auto;
 	border-radius: 25px;
