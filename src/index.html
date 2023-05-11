@@ -8,12 +8,12 @@
 </head>
 <body>
 	<header>
-		<button id="logo" class="center noselect"><img src="./assets/hanashi.png" draggable="false"></button>
+		<button id="logo" class="center noselect"><img src="./assets/hanashi_new.svg" draggable="false"></button>
 	</header>
 	<main class="between">
 		<div id="content" class="center">
 			<div id="video_in_div" class="center">
-			  <video id="video_in" autoplay muted>
+			  <video id="video_in" autoplay muted disablePictureInPicture>
 			  	<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
 			  </video>
 			</div>
@@ -21,9 +21,9 @@
 		<div id="side" class="between">
 			<div id="sidebar"></div>
 			<div id="video_out_div" class="center">
-				<!-- <video id="video_out" autoplay muted controls width="400" height="320"> -->
-					<!-- <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"> -->
-				<!-- </video> -->
+				<video id="video_out" autoplay muted disablePictureInPicture>
+					<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+				</video>
 			</div>
 		</div>
 	</main>
