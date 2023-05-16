@@ -8,21 +8,25 @@
 </head>
 <body>
 	<header>
-		<button id="logo" class="center noselect"><img src="./assets/hanashi_new.svg" draggable="false"></button>
+		<button id="logo" class="center noselect"><img src="./assets/hanashi.svg" draggable="false"></button>
 	</header>
 	<main class="between">
 		<div id="content" class="center">
 			<div id="video_in_div" class="center">
 			  <video id="video_in" autoplay muted disablePictureInPicture>
-			  	<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+			  	<!-- <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"> -->
 			  </video>
 			</div>
 		</div>
 		<div id="side" class="between">
-			<div id="sidebar"></div>
+			<div id="sidebar">
+				<button id="toggle_mute" data-state="off"><img src="./assets/mic_off.svg"></button>
+				<button id="toggle_cam" data-state="off"><img src="./assets/webcam_off.svg"></button>
+				<button id="end_call"><img src="./assets/end_call.svg"></button>
+			</div>
 			<div id="video_out_div" class="center">
 				<video id="video_out" autoplay muted disablePictureInPicture>
-					<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+					<!-- <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"> -->
 				</video>
 			</div>
 		</div>

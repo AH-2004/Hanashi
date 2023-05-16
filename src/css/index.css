@@ -5,7 +5,7 @@
 	--purple_2: #2c2a35;
 	--purple_3: #403c4d;
 	--purple_4: #494458;
-	--div_radius: 25px;
+	--div_radius: 15px;
 }
 
 html, body { height: 100%; margin: 0px; overflow-x: hidden; overflow-y: hidden; background-color: var(--purple_0); }
@@ -81,6 +81,26 @@ main video {
 	width: 100%;
 }
 
-#sidebar { height: 73%; }
+#video_out_div { height: 25% }
 
-#video_out_div { height: 25% };
+#sidebar {
+	height: 73%;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#sidebar button {
+	border: none;
+	border-radius: var(--div_radius);
+	margin: 5%;
+	background-color: var(--purple_4);
+	transition: ease-in-out 0.1s;
+	cursor: pointer;
+}
+
+#sidebar button img {
+	width: 45%; height: 45%;
+}
+
+#sidebar button:hover { background-color: var(--purple_3); }
