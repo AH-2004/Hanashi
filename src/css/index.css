@@ -83,6 +83,12 @@ main video {
 
 #video_out_div { height: 25% }
 
+#video_out {
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
 #sidebar {
 	height: 73%;
 	display: grid;
