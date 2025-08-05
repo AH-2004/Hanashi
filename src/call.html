@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg" href="./assets/favicon.svg">
+	<link rel="stylesheet" type="text/css" href="./css/call.css">
+	<title>Hanashi - Call</title>
+  </head>
+  <body class="center">
+	<header class="center">
+	  <div class="bar between">
+		<span class="spacer"></span>
+		<span class="icon center">
+		  <img src="./assets/hanashi.svg" class="noselect" draggable="false">
+		</span>
+		<span class="actionbar center">
+		  <button-component title="Toggle Mic">
+	  		<img src="./assets/mic_off.svg" class="noselect" draggable="false">
+		  </button-component>
+		  <button-component title="Toggle Webcam">
+	  		<img src="./assets/webcam_off.svg" class="noselect" draggable="false">
+		  </button-component>
+		  <button-component title="End Call">
+	  		<img src="./assets/end_call.svg" class="noselect" draggable="false">
+		  </button-component>
+		</span>
+	  </div>
+	</header>
+	<main class="center">
+	  <div class="content container center">
+		<video id="videoIn" autoplay muted disablePictureInPicture></video>
+	  	<!--
+		 !-- <img src="./assets/hanashi.svg" class="noselect" draggable="false">
+		  -->
+	  </div>
+	  <div class="side center">
+	  	<div class="chat container center">
+		  <div class="bubbles container center"></div>
+		  <input-component
+		  	title="Enter Message"
+			placeholder="Enter Message"
+			autofocus="false">
+		  </input-component>
+		</div>
+	  	<div class="preview container">
+		  	<video id="videoOut" autoplay muted disablePictureInPicture></video>
+		</div>
+	  </div>
+	</main>
+  </body>
+  	<script type="text/javascript" src="./js/call.js"></script>
+  <script src="_components/button/button.component" defer></script>
+  <script src="_components/input/input.component" defer></script>
+</html>

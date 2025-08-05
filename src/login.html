@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg" href="./assets/favicon.svg">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<title>Hanashi - Login</title>
+  </head>
+  <body class="center">
+	<main class="evenly">
+	  <img src="./assets/hanashi.svg" class="noselect" draggable="false">
+	  <h1>Welcome...</h1>
+	  <div class="center">
+		<input-component
+		  title="Username"
+		  placeholder="Username"
+		  autofocus="true"
+		  autocomplete="username">
+		</input-component>
+		<password-input-component
+		  title="Password"
+		  placeholder="Password"
+		  srcon="./assets/pass_on.svg"
+		  srcoff="./assets/pass_off.svg"
+		  srcstate="on">
+		</password-input-component>
+	  </div>
+	  <button-component title="Login">Login</button-component>
+	</main>
+  </body>
+  <script src="_components/input/input.component" defer></script>
+  <script src="_components/button/button.component" defer></script>
+  <script src="_components/passwordInput/passwordInput.component" defer></script>
+</html>

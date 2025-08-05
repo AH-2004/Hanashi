@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+} /* Fixing default html stuff */
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}

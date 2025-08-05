@@ -1,0 +1,90 @@
+:root {
+	/* Colors */
+	--purple_0: #1c1b20;
+	--purple_1: #242329;
+	--purple_2: #2c2a35;
+	--purple_3: #403c4d;
+	--purple_4: #494458;
+	--grey_1: #e8def7;
+
+	/* Constants */
+	--radius: 0.5em;
+	--margin: 0.25em;
+	--pad: 1em;
+}
+
+* { box-sizing: border-box; padding: 0px; margin: 0px; }
+html, body { height: 100%; overflow-x: hidden; overflow-y: hidden; }
+
+.center { display: flex; justify-content: center; align-items: center; }
+.evenly { display: flex; justify-content: space-evenly; align-items: center; }
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+body {
+	background-color: var(--purple_0);
+}
+
+main {
+	width: 40em;
+	height: 40em;
+	border-radius: calc(2 * var(--radius));
+	background-color: var(--purple_2);
+	flex-direction: column;
+}
+
+main img {
+	height: 4em;
+}
+
+main div {
+	flex-direction: column;
+}
+
+main h1 {
+	font-family: system-ui;
+	text-align: center;
+	color: var(--grey_1);
+}
+
+main h1::selection {
+	background-color: var(--purple_0);
+}
+
+input-component {
+	--input-component-fg: var(--grey_1);
+	--input-component-bg: var(--purple_4);
+	--input-component-focus-bg: var(--purple_3);
+	--input-component-sel: var(--purple_0);
+	--input-component-radius: var(--radius);
+	margin-bottom: var(--margin);
+}
+
+password-input-component {
+	--password-input-component-fg: var(--grey_1);
+	--password-input-component-bg: var(--purple_4);
+	--password-input-component-bg-2: var(--purple_3);
+	--password-input-component-sel: var(--purple_0);
+	--password-input-component-radius: var(--radius);
+	--password-input-component-margin: var(--margin);
+	margin-top: var(--margin);
+}
+
+button-component {
+	--button-component-fg: var(--grey_1);
+	--button-component-bg: var(--purple_4);
+	--button-component-bg-2: var(--purple_3);
+	--button-component-radius: var(--radius);
+}
+
+input-component, password-input-component, button-component {
+	width: 24em;
+	height: 2.5em;
+}

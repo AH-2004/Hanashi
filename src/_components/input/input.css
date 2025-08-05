@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+} /* Fixing default html stuff */
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: none;
+	font-family: system-ui;
+	color: var(--input-component-fg);
+	background-color: var(--input-component-bg);
+	border-radius: var(--input-component-radius);
+	transition: background-color 0.1s;
+}
+
+input:focus {
+	background-color: var(--input-component-focus-bg);
+}
+
+input::selection {
+	background-color: var(--input-component-sel);
+}
