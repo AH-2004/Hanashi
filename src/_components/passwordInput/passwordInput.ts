@@ -82,6 +82,7 @@ class passwordInputComponent extends HTMLElement {
 						extra: function (attrib, value, attribs) {
 							if (attribs.srcstate.value == "on") {
 								this.element.src = value;
+								this.elems.input.type = "text";
 							};
 						}
 					},
@@ -98,6 +99,7 @@ class passwordInputComponent extends HTMLElement {
 						extra: function (attrib, value, attribs) {
 							if (attribs.srcstate.value == "off") {
 								this.element.src = value;
+								this.elems.input.type = "password";
 							};
 						}
 					}
@@ -114,9 +116,8 @@ class passwordInputComponent extends HTMLElement {
 						extra: function (attrib, value, attribs) {
 							let src = (value == "on") ? attribs.srcon.value
 								: attribs.srcoff.value;
-							if (src != null) {
-								this.element.src = src;
-							};
+							if (src != null) { this.element.src = src; };
+							this.elems.input.type = (value == "on") ? "text" : "password";
 						}
 					}
 				]
@@ -136,12 +137,11 @@ class passwordInputComponent extends HTMLElement {
 				{
 					element: this.elems.button,
 					handler: (e) => {
-						this.attribs.srcstate.value = (this.attribs.srcstate.value == "on") ? "off" : "on";
 						let src = (this.attribs.srcstate.value == "on") ?
-							this.attribs.srcon.value : this.attribs.srcoff.value;
-						if (src != null) {
-							this.elems.icon.src = src;
-						};
+							this.attribs.srcoff.value : this.attribs.srcon.value;
+						if (src != null) { this.elems.icon.src = src; };
+						this.attribs.srcstate.value = (this.attribs.srcstate.value == "on") ? "off" : "on";
+						this.elems.input.type = (this.elems.input.type == "password") ? "text" : "password";
 					}
 				}
 			]
